@@ -21,6 +21,16 @@
       "validators": [],
       "translatable": true
     },
+    "_buttonText": {
+      "type": "string",
+      "required": false,
+      "inputType": "Text",
+      "title": "Button Text",
+      "help": "Text to display in the button",
+      "default": "Next Topic",
+      "validators": [],
+      "translatable": true
+    },
     "_requirePageCompletion": {
       "type": "boolean",
       "required": true,
@@ -43,12 +53,7 @@
       "inputType": "Text",
       "title": "Override Next Page ID",
       "help": "Specify the ID of the next content object (menu or page) to override the default behavior",
-      "default": "",
-      "validators": [{
-        "type": "regexp",
-        "regexp": "^[0-9a-f]{24}$",
-        "message": "This must be set to the ID number of another page or menu"
-      }]
+      "default": ""
     }    
   }
 }

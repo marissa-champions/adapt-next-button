@@ -1,13 +1,20 @@
-<div class="button-inner">
-    <div class="button-widget component-widget">
-        <button class="{{_classes}}" aria-label="{{displayTitle}}" title="{{_hoverText}}" {{#unless _isEnabled}}disabled{{/unless}}>{{{displayTitle}}}</button>
-    </div>
-
+{{import_globals}}
+<div class="component__inner">
+    {{#if displayTitle}}
+  <div class="finish-title component__title">
+  <div role="heading" tabindex="-1" class="finish-title-inner component__title-inner" aria-level="4" aria-hidden="true"> {{{compile displayTitle}}}</div>
+   {{/if}}
+</div>
     {{#if body}}
-    <div class="{{_component}}-body component-body">
-        <div class="{{_component}}-body-inner component-body-inner">
+    <div class="{{_component}}-body component__body">
+        <div class="{{_component}}-body-inner component__body-inner">
             {{{compile_a11y_text body this}}}
         </div>
     </div>
     {{/if}}
+    <div class="button-inner">
+        <div class="button-widget component-widget">
+            <button class="btn__next" aria-label="{{buttonText}}" title="{{_hoverText}}"><span class="next">{{{_buttonText}}}</span><div class="next-icon icon icon-controls-small-right"></div></button>
+        </div>
+</div>
 </div>

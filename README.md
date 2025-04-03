@@ -1,7 +1,7 @@
 adapt-next-button
 =================
 The **Next Page Button** provides a button for easily navigating to the next page in an Adapt course.
-
+Based on the adapt-next-button plugin by gowithfloat/adapt-next-button
 Settings
 --------
 ### Attributes

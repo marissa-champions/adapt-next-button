@@ -1,22 +1,21 @@
 {
   "name": "adapt-next-button",
-  "version": "0.9.8",
-  "framework": "^2.0.0",
+  "version": "1.0.12",
+  "framework": ">=5.3",
   "authors": [
-    "Daniel Pfeifffer <dpfeiffer@gowithfloat.com>"
+    "Champions"
   ],
   "main": "/js/adapt-next-button.js",
   "component": "next-button",
   "displayName": "Next Page Button",
   "description": "Provides a button for easily navigating to the next page in an Adapt course",
-  "homepage": "https://github.com/gowithfloat/adapt-next-button",
+  "homepage": "https://github.com/marissa-champions/adapt-next-button",
   "keywords": [
     "adapt-plugin",
     "adapt-component"
   ],
   "license": "MIT",
   "targetAttribute": "_nextButton",
-  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
